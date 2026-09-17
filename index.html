@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Bidan Sahabat Ibu — Praktik Mandiri Bidan</title>
+<meta name="description" content="Praktik Mandiri Bidan Sahabat Ibu: pemeriksaan kehamilan, persalinan, perawatan nifas dan menyusui, imunisasi anak, serta layanan KB dengan pendampingan yang hangat dan personal.">
+<meta name="theme-color" content="#FDFAF7">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="id_ID">
+<meta property="og:title" content="Bidan Sahabat Ibu — Praktik Mandiri Bidan">
+<meta property="og:description" content="Pendamping tepercaya di setiap langkah perjalanan Ibu — dari kehamilan, persalinan, hingga masa menyusui.">
+<meta property="og:image" content="assets/logo-bidan-sahabat-ibu.svg">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/styles.css">
+
+<script>
+  /* Aktifkan animasi muncul hanya bila peramban mendukungnya. Tanpa skrip ini
+     seluruh konten tetap tampil — animasi bersifat tambahan, bukan syarat. */
+  (function () {
+    try {
+      if ('IntersectionObserver' in window &&
+          !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.documentElement.classList.add('js-reveal');
+      }
+    } catch (e) { /* biarkan konten tampil apa adanya */ }
+  })();
+</script>
+</head>
+
+<!-- GANTI: nomor WhatsApp praktik, format internasional tanpa tanda "+" atau spasi. -->
+<body data-wa-number="6281200000000">
+
+<a class="skip-link" href="#main">Langsung ke konten utama</a>
+
+<!-- ========== Icon sprite ========== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <g id="i-stroke" fill="none" stroke="currentColor" stroke-width="1.8"
+       stroke-linecap="round" stroke-linejoin="round"></g>
+  </defs>
+
+  <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 6 9 17l-5-5"/>
+  </symbol>
+
+  <symbol id="icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round">
+    <path d="M12 5v14M5 12h14"/>
+  </symbol>
+
+  <symbol id="icon-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20.8 5.6a5.4 5.4 0 0 0-7.7 0L12 6.7l-1.1-1.1a5.4 5.4 0 1 0-7.7 7.7L12 22l8.8-8.7a5.4 5.4 0 0 0 0-7.7z"/>
+  </symbol>
+
+  <symbol id="icon-pregnancy" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20.4 6.4a4.6 4.6 0 0 0-6.5 0L12 8.2l-1.9-1.8a4.6 4.6 0 0 0-6.5 6.5L12 21l8.4-8.1a4.6 4.6 0 0 0 0-6.5z"/>
+    <path d="M3 12.2h3l1.6-2.6L9.8 14l1.7-2.9h3"/>
+  </symbol>
+
+  <symbol id="icon-birth" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8"/>
+    <circle cx="12" cy="6.4" r="3.4"/>
+    <path d="M2.5 20h19"/>
+  </symbol>
+
+  <symbol id="icon-milk" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 2.8s6 6.3 6 10.3a6 6 0 0 1-12 0c0-4 6-10.3 6-10.3z"/>
+    <path d="M9.4 13.6a2.8 2.8 0 0 0 2.6 3.6"/>
+  </symbol>
+
+  <symbol id="icon-baby" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="9"/>
+    <path d="M9 10.2h.01M15 10.2h.01"/>
+    <path d="M9 14.6a4 4 0 0 0 6 0"/>
+  </symbol>
+
+  <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 2.6 4.5 5.8v5.4c0 4.6 3.2 8.8 7.5 10.2 4.3-1.4 7.5-5.6 7.5-10.2V5.8z"/>
+    <path d="m9 11.8 2.1 2.1 4-4"/>
+  </symbol>
+
+  <symbol id="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20.5 11.6a7.9 7.9 0 0 1-8.5 7.9 8.9 8.9 0 0 1-2.6-.4L4 21l1.4-4.1a7.7 7.7 0 0 1-1.4-4.4 7.9 7.9 0 0 1 8.5-7.9 8 8 0 0 1 8 7.9z"/>
+    <path d="M9 11.5h.01M12 11.5h.01M15 11.5h.01"/>
+  </symbol>
+
+  <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="9"/>
+    <path d="M12 7v5.3l3.2 1.9"/>
+  </symbol>
+
+  <symbol id="icon-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 10.2c0 5.8-8 11.8-8 11.8s-8-6-8-11.8a8 8 0 0 1 16 0z"/>
+    <circle cx="12" cy="10" r="2.9"/>
+  </symbol>
+
+  <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21.5 16.9v2.8a1.9 1.9 0 0 1-2.1 1.9 18.8 18.8 0 0 1-8.2-2.9 18.5 18.5 0 0 1-5.7-5.7A18.8 18.8 0 0 1 2.6 4.7 1.9 1.9 0 0 1 4.5 2.6h2.8a1.9 1.9 0 0 1 1.9 1.6c.1.9.3 1.8.7 2.6a1.9 1.9 0 0 1-.4 2L8.3 10a15 15 0 0 0 5.7 5.7l1.2-1.2a1.9 1.9 0 0 1 2-.4c.8.4 1.7.6 2.6.7a1.9 1.9 0 0 1 1.7 2z"/>
+  </symbol>
+
+  <symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2.6" y="4.6" width="18.8" height="14.8" rx="2.4"/>
+    <path d="m3.4 6.4 8.6 6 8.6-6"/>
+  </symbol>
+
+  <symbol id="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="3" width="18" height="18" rx="5"/>
+    <circle cx="12" cy="12" r="4"/>
+    <path d="M17.4 6.6h.01"/>
+  </symbol>
+
+  <symbol id="icon-whatsapp" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.03 1.02-1.03 2.48s1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.7.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.42.25-.69.25-1.28.18-1.41-.08-.12-.28-.2-.57-.35M12.05 21.8a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26C2.17 6.45 6.6 2.02 12.05 2.02a9.82 9.82 0 0 1 6.99 2.9 9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.43 9.89-9.88 9.89M20.52 3.45A11.9 11.9 0 0 0 12.05 0C5.46 0 .1 5.36.1 11.95c0 2.1.55 4.14 1.6 5.94L0 24l6.3-1.65a11.97 11.97 0 0 0 5.73 1.46c6.58 0 11.94-5.36 11.95-11.95a11.88 11.88 0 0 0-3.47-8.46"/>
+  </symbol>
+</svg>
+
+<!-- ========== Header ========== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a class="brand" href="#beranda" aria-label="Bidan Sahabat Ibu — kembali ke beranda">
+      <img class="brand__mark" src="assets/logo-bidan-sahabat-ibu.svg"
+           alt="" width="44" height="44">
+      <span class="brand__text">
+        <span class="brand__name">Bidan Sahabat Ibu</span>
+        <span class="brand__tagline">Praktik Mandiri Bidan</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" type="button"
+            aria-expanded="false" aria-controls="primaryNav">
+      <span class="visually-hidden">Buka menu navigasi</span>
+      <span class="nav-toggle__bars" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+    </button>
+
+    <nav class="nav" id="primaryNav" aria-label="Navigasi utama">
+      <a class="nav__link" href="#layanan">Layanan</a>
+      <a class="nav__link" href="#tentang">Tentang</a>
+      <a class="nav__link" href="#jadwal">Jadwal &amp; Lokasi</a>
+      <a class="nav__link" href="#testimoni">Testimoni</a>
+      <a class="nav__link" href="#faq">FAQ</a>
+      <a class="nav__link" href="#kontak">Kontak</a>
+      <a class="btn btn--primary btn--sm nav__cta" href="#kontak">Buat Janji</a>
+    </nav>
+
+    <a class="btn btn--primary btn--sm header__cta" href="#kontak">Buat Janji</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ========== Hero ========== -->
+  <section class="hero" id="beranda">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <span class="eyebrow">Praktik Mandiri Bidan</span>
+
+        <h1 class="hero__title">
+          Pendamping tepercaya di setiap langkah <em>perjalanan Ibu</em>
+        </h1>
+
+        <p class="hero__lede">
+          Dari masa kehamilan, persalinan, hingga hari-hari pertama menyusui —
+          kami menemani Ibu dan si kecil dengan perawatan yang hangat, aman,
+          dan tidak terburu-buru.
+        </p>
+
+        <div class="hero__actions">
+          <!-- GANTI: sesuaikan nomor WhatsApp pada seluruh tautan wa.me. -->
+          <a class="btn btn--primary"
+             href="https://wa.me/6281200000000?text=Halo%2C%20saya%20ingin%20membuat%20janji%20konsultasi."
+             target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+            Buat Janji via WhatsApp
+          </a>
+          <a class="btn btn--ghost" href="#layanan">Lihat Layanan</a>
+        </div>
+
+        <ul class="hero__assurances">
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg>
+            Pendampingan personal
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg>
+            Suasana tenang &amp; privat
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg>
+            Siaga persalinan 24 jam
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero__media">
+        <!--
+          GANTI: ganti isi .hero__figure dengan foto asli, misalnya
+          <img src="assets/foto-praktik.jpg" alt="Suasana ruang praktik Bidan Sahabat Ibu">
+        -->
+        <div class="hero__figure">
+          <img class="hero__figure-mark" src="assets/logo-bidan-sahabat-ibu.svg"
+               alt="" width="200" height="200">
+        </div>
+
+        <div class="hero__badge">
+          <svg class="icon" aria-hidden="true"><use href="#icon-heart"></use></svg>
+          <div>
+            <strong>Ibu dan bayi diutamakan</strong>
+            <span>Setiap keputusan dibicarakan bersama</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Layanan ========== -->
+  <section class="section section--alt" id="layanan">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="eyebrow">Layanan Kami</span>
+        <h2 class="section-title">Perawatan lengkap untuk Ibu dan si kecil</h2>
+        <p class="section-lede">
+          Semua layanan diberikan oleh bidan, dengan rujukan ke dokter atau
+          rumah sakit bila kondisi memerlukannya.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <svg class="icon" aria-hidden="true"><use href="#icon-pregnancy"></use></svg>
+          </div>
+          <h3 class="service-card__title">Pemeriksaan Kehamilan</h3>
+          <p class="service-card__text">
+            Kontrol rutin sejak trimester pertama, dengan pemantauan yang
+            menyeluruh untuk Ibu maupun janin.
+          </p>
+          <ul class="service-card__list">
+            <li>Pemeriksaan tekanan darah &amp; berat badan</li>
+            <li>Pemantauan detak jantung janin</li>
+            <li>Konsultasi gizi dan keluhan kehamilan</li>
+          </ul>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <svg class="icon" aria-hidden="true"><use href="#icon-birth"></use></svg>
+          </div>
+          <h3 class="service-card__title">Persalinan Normal</h3>
+          <p class="service-card__text">
+            Pendampingan persalinan pervaginam dalam suasana tenang, privat,
+            dan seminimal mungkin intervensi.
+          </p>
+          <ul class="service-card__list">
+            <li>Pendampingan sejak tanda persalinan</li>
+            <li>Suami atau keluarga boleh mendampingi</li>
+            <li>Inisiasi Menyusu Dini (IMD)</li>
+          </ul>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <svg class="icon" aria-hidden="true"><use href="#icon-milk"></use></svg>
+          </div>
+          <h3 class="service-card__title">Nifas &amp; Menyusui</h3>
+          <p class="service-card__text">
+            Perawatan Ibu setelah melahirkan serta pendampingan agar proses
+            menyusui berjalan nyaman.
+          </p>
+          <ul class="service-card__list">
+            <li>Kontrol masa nifas</li>
+            <li>Pijat oksitosin &amp; perawatan payudara</li>
+            <li>Konsultasi ASI eksklusif</li>
+          </ul>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <svg class="icon" aria-hidden="true"><use href="#icon-baby"></use></svg>
+          </div>
+          <h3 class="service-card__title">Kesehatan Bayi &amp; Anak</h3>
+          <p class="service-card__text">
+            Menemani tumbuh kembang si kecil sejak hari pertama hingga usia
+            balita.
+          </p>
+          <ul class="service-card__list">
+            <li>Imunisasi dasar lengkap</li>
+            <li>Pemantauan tumbuh kembang</li>
+            <li>Pijat bayi &amp; perawatan tali pusat</li>
+          </ul>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <svg class="icon" aria-hidden="true"><use href="#icon-shield"></use></svg>
+          </div>
+          <h3 class="service-card__title">Keluarga Berencana</h3>
+          <p class="service-card__text">
+            Konseling tanpa menghakimi untuk membantu Ibu memilih metode yang
+            paling sesuai.
+          </p>
+          <ul class="service-card__list">
+            <li>Pil, suntik, dan implan</li>
+            <li>Pemasangan &amp; pelepasan IUD</li>
+            <li>Konsultasi efek samping</li>
+          </ul>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <svg class="icon" aria-hidden="true"><use href="#icon-chat"></use></svg>
+          </div>
+          <h3 class="service-card__title">Kelas &amp; Konsultasi</h3>
+          <p class="service-card__text">
+            Ruang untuk belajar dan bertanya, supaya Ibu merasa siap menjelang
+            hari besar.
+          </p>
+          <ul class="service-card__list">
+            <li>Kelas ibu hamil &amp; senam hamil</li>
+            <li>Persiapan persalinan</li>
+            <li>Konsultasi pranikah</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Tentang ========== -->
+  <section class="section" id="tentang">
+    <div class="container about__grid">
+      <!--
+        GANTI: ganti isi .about__figure dengan foto bidan, misalnya
+        <img src="assets/foto-bidan.jpg" alt="Bidan [Nama Lengkap]">
+      -->
+      <div class="about__figure">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <use href="#icon-heart" x="16" y="16" width="32" height="32"
+               style="color:#4A7C6F"></use>
+        </svg>
+      </div>
+
+      <div class="about__body">
+        <span class="eyebrow">Tentang Kami</span>
+        <!-- GANTI: nama lengkap dan gelar bidan penanggung jawab. -->
+        <h2 class="section-title">Bidan [Nama Lengkap], S.Tr.Keb.</h2>
+
+        <p style="margin-top:var(--space-6)">
+          Bidan Sahabat Ibu lahir dari satu keyakinan sederhana: setiap Ibu
+          berhak didengarkan. Bukan sekadar diperiksa lalu dipersilakan pulang,
+          tetapi benar-benar ditemani — dengan waktu yang cukup untuk bertanya
+          dan penjelasan yang mudah dipahami.
+        </p>
+        <p>
+          <!-- GANTI: riwayat pendidikan, pengalaman, dan nomor STR/SIPB yang sebenarnya. -->
+          [Tuliskan latar belakang pendidikan, pengalaman praktik, dan fokus
+          pelayanan di sini. Cantumkan pula nomor STR dan SIPB yang berlaku
+          agar calon pasien merasa yakin.]
+        </p>
+
+        <ul class="credentials">
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg>
+            <span><!-- GANTI -->Nomor STR: [isi nomor Surat Tanda Registrasi]</span>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg>
+            <span><!-- GANTI -->Nomor SIPB: [isi nomor Surat Izin Praktik Bidan]</span>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg>
+            <span>Anggota Ikatan Bidan Indonesia (IBI)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Mengapa kami ========== -->
+  <section class="section section--tint">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="eyebrow">Mengapa Bidan Sahabat Ibu</span>
+        <h2 class="section-title">Yang membuat Ibu merasa di rumah</h2>
+      </div>
+
+      <div class="value-grid">
+        <div class="value reveal">
+          <span class="value__num">01</span>
+          <h3 class="value__title">Waktu yang cukup</h3>
+          <p class="value__text">
+            Jadwal kami dibuat longgar. Tidak ada konsultasi yang diburu-buru,
+            dan semua pertanyaan boleh ditanyakan.
+          </p>
+        </div>
+        <div class="value reveal">
+          <span class="value__num">02</span>
+          <h3 class="value__title">Keputusan bersama</h3>
+          <p class="value__text">
+            Setiap tindakan dijelaskan lebih dulu — manfaat, risiko, dan
+            pilihannya — lalu Ibu yang memutuskan.
+          </p>
+        </div>
+        <div class="value reveal">
+          <span class="value__num">03</span>
+          <h3 class="value__title">Biaya transparan</h3>
+          <p class="value__text">
+            Rincian biaya disampaikan di awal. Tidak ada tambahan yang muncul
+            tiba-tiba di akhir.
+          </p>
+        </div>
+        <div class="value reveal">
+          <span class="value__num">04</span>
+          <h3 class="value__title">Siaga saat dibutuhkan</h3>
+          <p class="value__text">
+            Untuk pasien yang sudah terdaftar, kami dapat dihubungi di luar jam
+            praktik bila ada tanda persalinan.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Jadwal & Lokasi ========== -->
+  <section class="section" id="jadwal">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Jadwal &amp; Lokasi</span>
+        <h2 class="section-title">Kapan dan di mana Ibu bisa datang</h2>
+        <p class="section-lede">
+          Sebaiknya buat janji terlebih dahulu agar Ibu tidak perlu menunggu
+          lama. Untuk tanda persalinan, hubungi kami kapan saja.
+        </p>
+      </div>
+
+      <div class="schedule__grid">
+        <!-- GANTI: sesuaikan seluruh jam praktik di bawah ini. -->
+        <div class="hours">
+          <div class="hours__row">
+            <span class="hours__day">Senin – Jumat</span>
+            <span class="hours__time">08.00 – 20.00</span>
+          </div>
+          <div class="hours__row">
+            <span class="hours__day">Sabtu</span>
+            <span class="hours__time">08.00 – 17.00</span>
+          </div>
+          <div class="hours__row">
+            <span class="hours__day">Minggu</span>
+            <span class="hours__time">09.00 – 15.00</span>
+          </div>
+          <div class="hours__row">
+            <span class="hours__day">Hari libur nasional</span>
+            <span class="hours__time">Dengan perjanjian</span>
+          </div>
+          <div class="hours__row hours__row--highlight">
+            <span class="hours__day">Persalinan</span>
+            <span class="hours__time">Siaga 24 jam</span>
+          </div>
+        </div>
+
+        <dl class="contact-block">
+          <!-- GANTI: alamat praktik yang sebenarnya. -->
+          <div class="contact-item">
+            <span class="contact-item__icon">
+              <svg class="icon" aria-hidden="true"><use href="#icon-pin"></use></svg>
+            </span>
+            <div>
+              <dt>Alamat</dt>
+              <dd>[Jalan dan nomor], [Kelurahan], [Kecamatan]<br>[Kota], [Provinsi] [Kode Pos]</dd>
+            </div>
+          </div>
+
+          <a class="contact-item" href="https://wa.me/6281200000000"
+             target="_blank" rel="noopener">
+            <span class="contact-item__icon">
+              <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+            </span>
+            <div>
+              <dt>WhatsApp</dt>
+              <dd>+62 812-0000-0000</dd>
+            </div>
+          </a>
+
+          <a class="contact-item" href="tel:+6281200000000">
+            <span class="contact-item__icon">
+              <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
+            </span>
+            <div>
+              <dt>Telepon</dt>
+              <dd>+62 812-0000-0000</dd>
+            </div>
+          </a>
+
+          <div class="contact-item">
+            <span class="contact-item__icon">
+              <svg class="icon" aria-hidden="true"><use href="#icon-clock"></use></svg>
+            </span>
+            <div>
+              <dt>Catatan</dt>
+              <dd>Pendaftaran terakhir 30 menit sebelum jam praktik berakhir.</dd>
+            </div>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Testimoni ========== -->
+  <!--
+    PENTING: testimoni di bawah ini hanya CONTOH TATA LETAK, bukan ulasan asli.
+    Ganti dengan testimoni nyata dan pastikan sudah mendapat izin dari pasien
+    sebelum dipublikasikan. Hapus seluruh bagian ini bila belum ada.
+  -->
+  <section class="section section--alt" id="testimoni">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <span class="eyebrow">Testimoni</span>
+        <h2 class="section-title">Cerita dari para Ibu</h2>
+        <p class="section-lede">
+          [Bagian contoh — ganti dengan testimoni asli yang sudah diizinkan
+          untuk ditampilkan.]
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <figure class="testimonial reveal" style="margin:0">
+          <blockquote class="testimonial__quote">
+            [Tuliskan testimoni asli di sini — misalnya pengalaman Ibu selama
+            kontrol kehamilan hingga persalinan.]
+          </blockquote>
+          <figcaption class="testimonial__author">
+            <span class="testimonial__avatar" aria-hidden="true">–</span>
+            <span>
+              <span class="testimonial__name">[Nama pasien]</span><br>
+              <span class="testimonial__meta">[Layanan yang digunakan]</span>
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="testimonial reveal" style="margin:0">
+          <blockquote class="testimonial__quote">
+            [Tuliskan testimoni asli di sini — misalnya pengalaman mendapat
+            pendampingan menyusui.]
+          </blockquote>
+          <figcaption class="testimonial__author">
+            <span class="testimonial__avatar" aria-hidden="true">–</span>
+            <span>
+              <span class="testimonial__name">[Nama pasien]</span><br>
+              <span class="testimonial__meta">[Layanan yang digunakan]</span>
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="testimonial reveal" style="margin:0">
+          <blockquote class="testimonial__quote">
+            [Tuliskan testimoni asli di sini — misalnya pengalaman imunisasi
+            dan kontrol tumbuh kembang si kecil.]
+          </blockquote>
+          <figcaption class="testimonial__author">
+            <span class="testimonial__avatar" aria-hidden="true">–</span>
+            <span>
+              <span class="testimonial__name">[Nama pasien]</span><br>
+              <span class="testimonial__meta">[Layanan yang digunakan]</span>
+            </span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="section" id="faq">
+    <div class="container container--narrow">
+      <div class="section-head section-head--center">
+        <span class="eyebrow">Pertanyaan Umum</span>
+        <h2 class="section-title">Hal yang sering ditanyakan</h2>
+      </div>
+
+      <div class="faq">
+        <details class="faq__item">
+          <summary class="faq__question">
+            Apakah harus membuat janji sebelum datang?
+            <svg class="icon" aria-hidden="true"><use href="#icon-plus"></use></svg>
+          </summary>
+          <div class="faq__answer">
+            Tidak wajib, tetapi sangat dianjurkan. Dengan membuat janji lebih
+            dulu melalui WhatsApp, Ibu tidak perlu menunggu lama dan kami bisa
+            menyiapkan waktu konsultasi yang cukup.
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">
+            Apakah menerima BPJS Kesehatan?
+            <svg class="icon" aria-hidden="true"><use href="#icon-plus"></use></svg>
+          </summary>
+          <div class="faq__answer">
+            <!-- GANTI: sesuaikan dengan kebijakan praktik yang sebenarnya. -->
+            [Jelaskan di sini apakah praktik bekerja sama dengan BPJS Kesehatan,
+            layanan apa saja yang tercakup, dan berkas apa yang perlu dibawa.]
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">
+            Metode pembayaran apa saja yang diterima?
+            <svg class="icon" aria-hidden="true"><use href="#icon-plus"></use></svg>
+          </summary>
+          <div class="faq__answer">
+            <!-- GANTI: sesuaikan metode pembayaran yang tersedia. -->
+            [Sebutkan metode pembayaran yang diterima, misalnya tunai, transfer
+            bank, atau QRIS.]
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">
+            Bolehkah suami mendampingi saat persalinan?
+            <svg class="icon" aria-hidden="true"><use href="#icon-plus"></use></svg>
+          </summary>
+          <div class="faq__answer">
+            Sangat boleh, dan kami menganjurkannya. Kehadiran suami atau
+            keluarga terdekat banyak membantu Ibu merasa tenang selama proses
+            persalinan.
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">
+            Apa saja yang perlu dibawa menjelang persalinan?
+            <svg class="icon" aria-hidden="true"><use href="#icon-plus"></use></svg>
+          </summary>
+          <div class="faq__answer">
+            Buku KIA, kartu identitas, kartu BPJS bila ada, serta perlengkapan
+            Ibu dan bayi seperti pakaian ganti, kain bedong, popok, dan
+            perlengkapan mandi. Sebaiknya tas sudah disiapkan sejak usia
+            kehamilan 36 minggu.
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">
+            Kapan saya harus segera menghubungi bidan?
+            <svg class="icon" aria-hidden="true"><use href="#icon-plus"></use></svg>
+          </summary>
+          <div class="faq__answer">
+            Segera hubungi kami bila muncul kontraksi teratur, keluar air
+            ketuban, perdarahan, gerakan janin berkurang, sakit kepala hebat,
+            atau pandangan kabur — kapan pun waktunya, termasuk di luar jam
+            praktik.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Kontak / Booking ========== -->
+  <section class="section section--alt" id="kontak">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Buat Janji</span>
+        <h2 class="section-title">Mari berbincang dulu</h2>
+        <p class="section-lede">
+          Isi keterangan singkat di bawah ini, lalu kirim lewat WhatsApp.
+          Kami akan membalas untuk memastikan jadwalnya.
+        </p>
+      </div>
+
+      <div class="booking__grid">
+        <!--
+          Formulir ini tidak memerlukan server: isian dirangkai menjadi pesan
+          WhatsApp yang siap dikirim. Lihat js/main.js.
+        -->
+        <form class="form" id="bookingForm" novalidate>
+          <div class="field">
+            <label for="nama">Nama Ibu</label>
+            <input type="text" id="nama" name="nama" autocomplete="name"
+                   placeholder="Nama lengkap" required>
+          </div>
+
+          <div class="field">
+            <label for="layanan">Layanan yang dibutuhkan</label>
+            <select id="layanan" name="layanan" required>
+              <option value="">Pilih layanan…</option>
+              <option>Pemeriksaan kehamilan</option>
+              <option>Konsultasi persalinan</option>
+              <option>Perawatan nifas &amp; menyusui</option>
+              <option>Imunisasi / kesehatan anak</option>
+              <option>Keluarga Berencana (KB)</option>
+              <option>Kelas ibu hamil</option>
+              <option>Lainnya</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="waktu">Perkiraan waktu kunjungan</label>
+            <input type="text" id="waktu" name="waktu"
+                   placeholder="Misalnya: Sabtu pagi, atau 12 Juni sore">
+          </div>
+
+          <div class="field">
+            <label for="pesan">Keluhan atau pertanyaan <span class="field__hint">(opsional)</span></label>
+            <textarea id="pesan" name="pesan"
+                      placeholder="Ceritakan singkat keperluan Ibu…"></textarea>
+          </div>
+
+          <button class="btn btn--accent btn--block" type="submit">
+            <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+            Kirim lewat WhatsApp
+          </button>
+
+          <p class="form__note">
+            Pesan akan terbuka di aplikasi WhatsApp Ibu sebelum dikirim,
+            sehingga masih bisa diperiksa dan diubah lebih dulu.
+          </p>
+        </form>
+
+        <div>
+          <div class="cta-band">
+            <h2 class="cta-band__title">Ada tanda persalinan?</h2>
+            <p class="cta-band__text">
+              Jangan menunggu jam praktik. Hubungi kami sekarang juga, kapan pun
+              waktunya.
+            </p>
+            <div class="cta-band__actions">
+              <a class="btn btn--accent" href="tel:+6281200000000">
+                <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
+                Telepon Sekarang
+              </a>
+              <a class="btn btn--ghost"
+                 href="https://wa.me/6281200000000?text=Halo%20Bidan%2C%20saya%20mengalami%20tanda%20persalinan."
+                 target="_blank" rel="noopener">Chat WhatsApp</a>
+            </div>
+          </div>
+
+          <dl class="contact-block" style="margin-top:var(--space-6)">
+            <!-- GANTI: alamat surel dan akun Instagram praktik. -->
+            <a class="contact-item" href="mailto:halo@bidansahabatibu.id">
+              <span class="contact-item__icon">
+                <svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg>
+              </span>
+              <div>
+                <dt>Surel</dt>
+                <dd>halo@bidansahabatibu.id</dd>
+              </div>
+            </a>
+
+            <a class="contact-item" href="https://instagram.com/"
+               target="_blank" rel="noopener">
+              <span class="contact-item__icon">
+                <svg class="icon" aria-hidden="true"><use href="#icon-instagram"></use></svg>
+              </span>
+              <div>
+                <dt>Instagram</dt>
+                <dd>@bidansahabatibu</dd>
+              </div>
+            </a>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ========== Footer ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="brand">
+          <img class="brand__mark" src="assets/logo-bidan-sahabat-ibu.svg"
+               alt="" width="44" height="44">
+          <span class="brand__text">
+            <span class="brand__name">Bidan Sahabat Ibu</span>
+            <span class="brand__tagline">Praktik Mandiri Bidan</span>
+          </span>
+        </div>
+        <p class="footer__about">
+          Menemani Ibu sejak masa kehamilan hingga si kecil tumbuh sehat,
+          dengan perawatan yang hangat dan penjelasan yang mudah dipahami.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="footer__heading">Layanan</h2>
+        <ul class="footer__list">
+          <li><a href="#layanan">Pemeriksaan kehamilan</a></li>
+          <li><a href="#layanan">Persalinan normal</a></li>
+          <li><a href="#layanan">Nifas &amp; menyusui</a></li>
+          <li><a href="#layanan">Kesehatan bayi &amp; anak</a></li>
+          <li><a href="#layanan">Keluarga Berencana</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="footer__heading">Informasi</h2>
+        <ul class="footer__list">
+          <li><a href="#tentang">Tentang kami</a></li>
+          <li><a href="#jadwal">Jadwal &amp; lokasi</a></li>
+          <li><a href="#faq">Pertanyaan umum</a></li>
+          <li><a href="#kontak">Buat janji</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; <span id="year">2026</span> Bidan Sahabat Ibu. Seluruh hak cipta dilindungi.</span>
+      <span>Informasi di situs ini bersifat umum dan bukan pengganti pemeriksaan langsung.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float"
+   href="https://wa.me/6281200000000?text=Halo%2C%20saya%20ingin%20bertanya."
+   target="_blank" rel="noopener" aria-label="Hubungi kami lewat WhatsApp">
+  <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+</a>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
