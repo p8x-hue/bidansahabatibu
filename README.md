@@ -5,11 +5,49 @@ statis berisi profil, layanan, jadwal praktik, dan formulir janji temu yang
 langsung terhubung ke WhatsApp.
 
 > **Catatan asal-usul.** Situs ini **tidak** dibuat dari ekspor Claude Design.
-> Berkas ekspor (`Website Bidan Sahabat Ibu.dc.html`, folder `_ds/`, aset logo,
-> dan transkrip `chats/`) tidak pernah tersedia di lingkungan kerja, sehingga
-> seluruh tata letak, warna, tipografi, dan naskah di sini adalah rancangan
-> baru. Bila ekspor aslinya muncul kemudian, perlakukan berkas-berkas ini
-> sebagai rancangan sementara yang perlu diselaraskan.
+> Seluruh tata letak, warna, tipografi, dan naskah di sini adalah rancangan
+> baru — perlakukan sebagai rancangan sementara yang masih perlu diselaraskan
+> dengan desain aslinya.
+>
+> Sudah dua kali upaya impor gagal karena berkas ekspor tidak pernah tersedia
+> di lingkungan kerja; yang terakhir 18 September 2026. Pada sesi Claude Code
+> di peramban, `DesignSync` menolak dengan alasan perlu `/design-login` yang
+> tidak bisa dijalankan di sesi non-interaktif, dan permintaan langsung ke
+> `https://api.anthropic.com/v1/design/mcp` menghasilkan `401`. Lihat
+> [Menyelaraskan dengan ekspor Claude Design](#menyelaraskan-dengan-ekspor-claude-design).
+
+## Menyelaraskan dengan ekspor Claude Design
+
+Proyek desainnya ada di
+<https://claude.ai/design/p/78503694-ba8c-472a-bfda-0506ecd028e6>.
+
+Cara menurunkan berkasnya: buka proyek tersebut, lalu pakai tombol
+**"Send to Claude Code Web"**. Tombol itu menyalin ekspor langsung ke ruang
+kerja sesi baru. Jangan mengandalkan `DesignSync` dari sesi peramban — tanpa
+`/design-login` yang interaktif, pemanggilannya selalu ditolak.
+
+Berkas yang ditunggu:
+
+| Berkas | Peran |
+|---|---|
+| `Bidan Sahabat Ibu - Website.dc.html` | halaman yang harus diimplementasikan |
+| `_ds/…/_ds_bundle.js`, `_ds/…/styles.css` | runtime dan gaya sistem desain |
+| `_ds/…/tokens/{base,colors,fonts,shape,spacing,typography}.css` | enam lapis token |
+| `assets/logo-bidan-sahabat-ibu.png` | logo asli |
+| `support.js` | skrip pendukung ekspor |
+
+Setelah ekspor tersedia:
+
+- Ganti `css/tokens.css` dengan keenam berkas token dari `_ds/`, jangan
+  digabung — token yang ada sekarang hasil rekaan, bukan turunan desain.
+- Ganti `assets/logo-bidan-sahabat-ibu.svg` dengan logo PNG dari ekspor.
+- Pertahankan perilaku yang dibuat tangan dan mungkin tidak ikut terekam di
+  ekspor: `lang="id"`, formulir janji temu berbasis tautan `wa.me` yang tidak
+  butuh server, penanganan `prefers-reduced-motion`, serta FAQ
+  `<details>`/`<summary>` yang tetap berfungsi tanpa JavaScript.
+- Jangan biarkan impor desain mengubah teks contoh pada bagian testimoni
+  menjadi tampak seperti ulasan pasien sungguhan.
+- Perbarui catatan asal-usul di atas setelah selesai.
 
 ## Menjalankan secara lokal
 
